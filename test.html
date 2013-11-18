@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script>
+
+        function add(x, y) {
+            return x + y;
+        }
+
+        function mul(x, y) {
+            return x * y;
+        }
+
+        function make() {
+            var f = arguments[arguments.length - 1];
+            if (typeof f != 'function') {
+                return Function.prototype.bind.apply(make, Array.prototype.concat.apply([null], arguments))
+            } else {
+                return Array.prototype.reduce.call(arguments, function(a,b) {
+                    return typeof b != 'function' ? f(a,b) : a;
+                });
+            }
+        }
+
+        var s = make(1)(2)(3)(4)(5);
+        console.assert(s(add) == 15);
+        console.assert(s(mul) == 120);
+
+        s(10)(7)(0);
+        console.assert(s(add) == 32);
+        console.assert(s(mul) == 0);
+
+        var x = make(5)(10)(15);
+        console.assert(x(add) == 30);
+        console.assert(x(mul) == 750);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
