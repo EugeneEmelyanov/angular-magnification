@@ -3,5 +3,6 @@ define([
 './myDirective',
 './angular',
 './magnificationItem',
-'./magnificationContainer'
+'./magnificationContainer',
+'./magnificationArea'
 ], function(){})

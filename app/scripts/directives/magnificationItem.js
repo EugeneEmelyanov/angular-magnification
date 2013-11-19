@@ -9,14 +9,6 @@ define(['./directives'], function(directives) {
 				
 				magnificationController.addItem(scope);
 
-				// el.on('mouseover', function(evt) {
-				// 	magnificationController.scaleUp(scope);
-				// });
-
-				// el.on('mouseout', function(evt) {
-				// 	magnificationController.scaleDown(scope);
-				// });
-
 				scope.scaleStyle = {
 						'width': scope.elWidth + 'px', 
 						'height': scope.elHeight + 'px', 
