@@ -1,6 +1,6 @@
 define(['./controllers'], function(controllers) {
 	
-	controllers.controller('SearchController', function($scope, $http) {
+	controllers.controller('SearchController', ['$scope', '$http', function($scope, $http) {
 
 		$scope.searchWord = '';
 		$scope.perPage = '';
@@ -15,6 +15,6 @@ define(['./controllers'], function(controllers) {
 			   	});
 			}
 
-	});
+	}]);
 
 })

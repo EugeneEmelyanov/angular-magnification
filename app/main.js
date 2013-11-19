@@ -17,7 +17,6 @@ require.config({
 		'angular.ui': ['angular'],
 		'angular.bootstrap' : ['angular'],
 		'angular.animate' : ['angular']
-	},
+	}
 
-	deps: ['scripts/bootstrap']
 });

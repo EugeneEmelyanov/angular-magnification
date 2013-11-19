@@ -1,4 +1,4 @@
 define([
 //services goes here
-'./myService.js'
+ './myService'
 ], function(){})
