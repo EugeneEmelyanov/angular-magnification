@@ -1,15 +1,14 @@
 
 define(['angular', 
   'angularMocks',
-  'scripts/controllers/controllers',
-  'scripts/controllers/index',
-  'scripts/controllers/myController'], function (controllers) {
+  ''
+  ], function (controllers) {
   'use strict';
 
   describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(angular.module('controllers'));
+  beforeEach(angular.module('app'));
 
   var controllers = angular.module('controllers'),
     MainCtrl,
@@ -18,7 +17,7 @@ define(['angular',
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = controllers.controller('myController', {
+    MainCtrl = $controller('myController', {
       $scope: scope
     });
   }));
