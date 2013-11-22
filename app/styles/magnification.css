@@ -1,0 +1,13 @@
+.magnification-container {
+  overflow: hidden;
+}
+
+.magnification-area {
+  position: relative;
+}
+
+.magnification-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
