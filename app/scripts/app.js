@@ -1,9 +1,9 @@
 define([
       'angular',
-      './controllers/index',
-      './directives/index',
-      './filters/index',
       './services/index',
+      './controllers/index',
+      './filters/index',
+      './directives/index',
       'angular.route',
       'angular.bootstrap',
       'angular.animate'

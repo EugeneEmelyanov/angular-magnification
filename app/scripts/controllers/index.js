@@ -1,5 +1,3 @@
 define([
-//controller definitions goes here
-  './myController',
-  './searchController'
+	'./controllers'
 	], function() {})

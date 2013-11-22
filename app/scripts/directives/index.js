@@ -1,8 +1,6 @@
 define([
-
-'./myDirective',
-'./angular',
-'./magnificationItem',
-'./magnificationContainer',
-'./magnificationArea'
+'./directives',
+'./magnification/magnificationItem',
+'./magnification/magnificationContainer',
+'./magnification/magnificationArea'
 ], function(){})
