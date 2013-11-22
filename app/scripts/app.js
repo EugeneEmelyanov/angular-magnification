@@ -4,6 +4,7 @@ define([
       './controllers/index',
       './filters/index',
       './directives/index',
+      './directives/magnification/index',
       'angular.route',
       'angular.bootstrap',
       'angular.animate'
@@ -15,6 +16,7 @@ define([
          'controllers',
          'filters',
          'directives',
+         'magnification',
          'ngRoute',
          'ui.bootstrap',
          'ngAnimate'
