@@ -3,8 +3,10 @@ define(['./magnification'], function(directives) {
 
 		return {
 			restrict: 'E',
+			remove: true,
 			require: '^magnificationContainer',
-			transclude: 'true',
+			transclude: true,
+			replace: true,
 			link: function(scope, el, attr, magnificationController) {
 				
 				magnificationController.addItem(scope);
