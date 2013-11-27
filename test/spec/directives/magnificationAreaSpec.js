@@ -2,6 +2,7 @@ define(['angular',
   'angularMocks',
   ''
   ], function (controllers) {
+
    'use strict';
 
   describe('Directive: magnificationArea', function () {
